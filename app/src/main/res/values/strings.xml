@@ -13,6 +13,9 @@
     <string name="reset">Reset</string>
     <string name="errorLogin">Username or password is invalid!</string>
     <string name="logoName">&appname; Logo</string>
-    <string name="logout">Log out</string>
+    <string name="logout">Log-out</string>
+    <string name="logoutQuestion">Do you really want to log-out?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 
 </resources>

@@ -108,6 +108,7 @@ public class LoginActivity extends AppCompatActivity {
                     Intent iMain = new Intent(LoginActivity.this, MainActivity.class);
                     iMain.putExtra(PARAM_USERNAME, etUsername.getText().toString());
                     startActivity(iMain);
+                    finish();
                 }
             }
         });
