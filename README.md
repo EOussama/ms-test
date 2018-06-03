@@ -8,4 +8,4 @@ first app actually, all done for learning purposes. Nothing is better than a
 playground.
 
 ## Credits
-Icon made by [Freepik](www.flaticon.com) from [www.flaticon.com](www.flaticon.com).
+> Icon made by [Freepik](www.flaticon.com) from [www.flaticon.com](www.flaticon.com).
