@@ -1,4 +1,4 @@
-<h1>MS Test</h1>
+<h1 align="center">MS Test</h1>
 
 ## Description
 It's been forever since I've done anything related to Java, and what's a better 
