@@ -19,7 +19,8 @@ public class LoginActivity extends AppCompatActivity {
             new User("Oussama", "123456789"),
             new User("Compton", "oussama"),
             new User("Jikesh", "teamdrd"),
-            new User("teamdrd", "drddayz")
+            new User("teamdrd", "drddayz"),
+            new User("admin", "123")
     };
 
     Button btnLogin;
