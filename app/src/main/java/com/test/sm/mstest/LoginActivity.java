@@ -15,12 +15,12 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity {
 
     public static final String PARAM_USERNAME = "com.test.sm.mstest.USERNAME";
-    private static final User[] USERS = {
-            new User("Oussama", "123456789"),
-            new User("Compton", "oussama"),
-            new User("Jikesh", "teamdrd"),
-            new User("teamdrd", "drddayz"),
-            new User("admin", "123")
+    public static final User[] USERS = {
+            new User("Oussama", "123456789", new String[] {"One Piece", "Code Geass", "Steins;Gate", "Clannad"}),
+            new User("Compton", "oussama", new String[] {"One Piece", "Naruto", "Tokyo Ghoul"}),
+            new User("Jikesh", "teamdrd", new String[] {"Tokyo Ghoul", "Attack on Titan", "Death parade"}),
+            new User("teamdrd", "drddayz", new String[] {"Digimon"}),
+            new User("admin", "123", new String[] {"Hamtaro", "Bleach", "Fullmetal Alchemist"})
     };
 
     Button btnLogin;

@@ -6,70 +6,129 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TableRow
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
+            android:layout_height="match_parent">
+
+            <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="@color/colorLightGray"
-                android:layout_weight="1">
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/colorLightGray"
+                    android:layout_weight="1">
 
-                <ImageView
-                    android:id="@+id/avatar"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/avatar"
-                    android:contentDescription="@string/logoName"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_centerVertical="true"/>
+                    <ImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/avatar"
+                        android:contentDescription="@string/logoName"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerVertical="true"/>
 
-                <TextView
-                    android:id="@+id/username"
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_toRightOf="@id/avatar"
+                        android:layout_centerVertical="true"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <Button
+                        android:id="@+id/btnLogout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/logout"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"/>
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <EditText
+                    android:id="@+id/etSearch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
-                    android:layout_toRightOf="@id/avatar"
-                    android:layout_centerVertical="true"
-                    android:textSize="20sp"
-                    android:layout_marginLeft="10dp"/>
+                    android:inputType="text"
+                    android:hint="@string/searchHint"
+                    android:layout_weight="5"/>
 
                 <Button
-                    android:id="@+id/btnLogout"
+                    android:id="@+id/btnSearch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/logout"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="10dp"/>
+                    android:text="@string/search"
+                    android:layout_weight="1"/>
+            </TableRow>
 
-            </RelativeLayout>
-        </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp">
-            <EditText
-                android:id="@+id/etSearch"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:hint="@string/searchHint"
-                android:layout_weight="5"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="@string/favAnime"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+            </TableRow>
 
-            <Button
-                android:id="@+id/btnSearch"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/search"
-                android:layout_weight="1"/>
-        </TableRow>
-    </TableLayout>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ListView
+                    android:id="@+id/lvAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </ListView>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvUsers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="@string/users"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ListView
+                    android:id="@+id/lvUsers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </ListView>
+            </TableRow>
+
+        </TableLayout>
 
 </android.support.constraint.ConstraintLayout>

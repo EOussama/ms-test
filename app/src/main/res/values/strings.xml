@@ -23,4 +23,7 @@
     <string name="searchHint">Input a search query</string>
     <string name="searchEmptyError">You have to type something first!</string>
 
+    <string name="favAnime">Favourite anime shows</string>
+    <string name="users">Users</string>
+
 </resources>
